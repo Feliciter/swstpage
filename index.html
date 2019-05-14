@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StarWars fun inventory  </title>
+  <meta name="description" content="StarWars fun inventory ">
+   <meta name="author" content="SitePoint">
+   <link href="./bootstrap/css/bootstrap.css" rel="stylesheet" >
+   <link href="./css/dashboard.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/b-1.5.4/r-2.2.2/sl-1.2.6/datatables.min.css"/>
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+   <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/b-1.5.4/r-2.2.2/sl-1.2.6/datatables.min.js"></script>
+   <!-- <script src="js/editor.bootstrap.min.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+   <script src=" https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script src=" https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+   <script src="js/javascript.js"></script>
+</head>
+<body>
+       
+              <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+                  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">STAR WARS</a>
+                
+                  <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                      <a class="nav-link" href="#">How it works</a>
+                    </li>
+                  </ul>
+                </nav>
+                
+                <div class="container-fluid">
+                  <div class="row">
+                   
+<!-- .col-md-3
+.col-md-6
+.col-md-3 https://getbootstrap.com/docs/4.3/examples/grid/-->
+
+                
+                    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">Categories</h1>
+                        <div class="btn-toolbar mb-2 mb-md-0">
+                      
+                        </div>
+                      </div>
+
+
+                      
+
+                      <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="nav-films-tab" data-toggle="tab" href="#nav-films" role="tab" aria-controls="nav-films" aria-selected="true">films</a>
+                          <a class="nav-item nav-link" id="nav-people-tab" data-toggle="tab" href="#nav-people" role="tab" aria-controls="nav-people" aria-selected="false">people</a>
+                           <a class="nav-item nav-link" id="nav-planets-tab" data-toggle="tab" href="#nav-planets" role="tab" aria-controls="nav-planets" aria-selected="false">planets</a>
+                          <a class="nav-item nav-link" id="nav-species-tab" data-toggle="tab" href="#nav-species" role="tab" aria-controls="nav-species" aria-selected="false">species</a>
+                          <a class="nav-item nav-link" id="nav-starships-tab" data-toggle="tab" href="#nav-starships" role="tab" aria-controls="nav-starships" aria-selected="true">starships</a>
+                          <a class="nav-item nav-link" id="nav-vehicles-tab" data-toggle="tab" href="#nav-vehicles" role="tab" aria-controls="nav-vehicles" aria-selected="false">vehicles</a>
+                       
+                        
+                        </div>
+                      </nav>
+                    
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-films" role="tabpanel" aria-labelledby="nav-films-tab">films
+                          
+                          
+                          <div>
+
+                              <table id="tableout" class="display" style="width:100%">
+                                
+                                  <thead>
+                                      <tr>
+                                        <th>title</th>
+                                        <th>episode_id</th>                                        
+                                      </tr>
+                                  </thead>
+                                  <tfoot>
+                                      <tr>
+                                        <th>title</th>
+                                        <th>episode_id</th>
+                                      </tr>
+                                  </tfoot>
+                              </table>
+                          </div> 
+                                          
+                        </div>
+                        <div class="tab-pane fade" id="nav-people" role="tabpanel" aria-labelledby="nav-people-tab">people</div>
+                        <div class="tab-pane fade" id="nav-planets" role="tabpanel" aria-labelledby="nav-planets-tab">planets</div>
+                        <div class="tab-pane fade" id="nav-species" role="tabpanel" aria-labelledby="nav-species-tab">species</div>
+                        <div class="tab-pane fade" id="nav-starships" role="tabpanel" aria-labelledby="nav-starships-tab">starships</div>
+                        <div class="tab-pane fade" id="nav-vehicles" role="tabpanel" aria-labelledby="nav-vehicles-tab">vehicles </div>
+                      </div>
+                    </main>
+                  </div>
+                </div>
+
+              </body>
+</html>
