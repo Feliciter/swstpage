@@ -34,12 +34,7 @@
                 
                 <div class="container-fluid">
                   <div class="row">
-                   
-<!-- .col-md-3
-.col-md-6
-.col-md-3 https://getbootstrap.com/docs/4.3/examples/grid/-->
 
-                
                     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                         <h1 class="h2">Categories</h1>
@@ -47,32 +42,23 @@
                       
                         </div>
                       </div>
-
-
-                      
-
                       <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                           <a class="nav-item nav-link active" id="nav-films-tab" data-toggle="tab" href="#nav-films" role="tab" aria-controls="nav-films" aria-selected="true">films</a>
-                          <a class="nav-item nav-link" id="nav-people-tab" data-toggle="tab" href="#nav-people" role="tab" aria-controls="nav-people" aria-selected="false">people</a>
+                          <a class="nav-item nav-link" id="nav-people-tab" data-toggle="tab" href="#nav-people" role="tab" aria-controls="nav-people" aria-selected="false">characters</a>
                            <a class="nav-item nav-link" id="nav-planets-tab" data-toggle="tab" href="#nav-planets" role="tab" aria-controls="nav-planets" aria-selected="false">planets</a>
                           <a class="nav-item nav-link" id="nav-species-tab" data-toggle="tab" href="#nav-species" role="tab" aria-controls="nav-species" aria-selected="false">species</a>
                           <a class="nav-item nav-link" id="nav-starships-tab" data-toggle="tab" href="#nav-starships" role="tab" aria-controls="nav-starships" aria-selected="true">starships</a>
                           <a class="nav-item nav-link" id="nav-vehicles-tab" data-toggle="tab" href="#nav-vehicles" role="tab" aria-controls="nav-vehicles" aria-selected="false">vehicles</a>
-                       
-                        
+                                              
                         </div>
                       </nav>
                     
                       <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-films" role="tabpanel" aria-labelledby="nav-films-tab">films
-                          
-                          
-                          <div>
-
+                        <div class="tab-pane fade show active" id="nav-films" role="tabpanel" aria-labelledby="nav-films-tab">
+                           <div>
                               <table id="tableout" class="display" style="width:100%">
-                                
-                                  <thead>
+                                   <thead>
                                       <tr>
                                         <th>title</th>
                                         <th>episode_id</th>                                        
@@ -88,7 +74,24 @@
                           </div> 
                                           
                         </div>
-                        <div class="tab-pane fade" id="nav-people" role="tabpanel" aria-labelledby="nav-people-tab">people</div>
+                        <div class="tab-pane fade" id="nav-people" role="tabpanel" aria-labelledby="nav-people-tab">
+                          <div>
+                            <table id="tableout2" class="display" style="width:100%">
+                                 <thead>
+                                    <tr>
+                                      <th>title</th>
+                                      <th>episode_id</th>                                        
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                      <th>title</th>
+                                      <th>episode_id</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        </div>
                         <div class="tab-pane fade" id="nav-planets" role="tabpanel" aria-labelledby="nav-planets-tab">planets</div>
                         <div class="tab-pane fade" id="nav-species" role="tabpanel" aria-labelledby="nav-species-tab">species</div>
                         <div class="tab-pane fade" id="nav-starships" role="tabpanel" aria-labelledby="nav-starships-tab">starships</div>
