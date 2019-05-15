@@ -29,6 +29,18 @@ fetch(url)
         } );
 
 
+        $(document).ready(function() {
+          var table = $('#tableout2').DataTable( {
+              "processing": true,
+               data:data.results,
+               'columns': [
+                  {   'data':'title'},                                          
+                  {   'data': 'episode_id'}
+                ]
+          } );
+      } );
+
+
       });  
     }  
   )  
