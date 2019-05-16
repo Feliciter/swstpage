@@ -38,7 +38,30 @@ fetch(url)
                   {   'data': 'episode_id'}
                 ]
           } );
-      } );
+        } );
+
+        $(document).ready(function() {
+          var table = $('#tableout3').DataTable( {
+              "processing": true,
+               data:data.results,
+               'columns': [
+                  {   'data':'title'},                                          
+                  {   'data': 'episode_id'}
+                ]
+          } );
+        } );
+
+        $(document).ready(function() {
+          var table = $('#tableout4').DataTable( {
+              "processing": true,
+               data:data.results,
+               'columns': [
+                  {   'data':'title'},                                          
+                  {   'data': 'episode_id'}
+                ]
+          } );
+        } );
+
 
 
 
