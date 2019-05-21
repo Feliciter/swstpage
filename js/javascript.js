@@ -15,60 +15,52 @@ fetch(url)
       response.json().then(function(data) {  
       // console.log(data); 
         console.dir (data.results) 
-
+       
+       
 
         $(document).ready(function() {
-            var table = $('#tableout').DataTable( {
+               $('#tableout').DataTable( {
+                "processing": true,
+                 data:data.results,
+                 dataYear:data.results.created,
+                 'columns': [
+                    {   'data':'title'},                                          
+                    {   'data': 'episode_id'},
+                    {   'data':'director'},                                          
+                    {   'data':'release_date'}
+                  ]
+            } );
+
+            $('#tableout2').DataTable( {
+                    "processing": true,
+                     data:data.results,
+                     'columns': [
+                        {   'data':'title'},                                          
+                        {   'data': 'episode_id'}
+                      ]
+                } );
+
+                $('#tableout3').DataTable( {
+                  "processing": true,
+                   data:data.results,
+                   'columns': [
+                      {   'data':'title'},                                          
+                      {   'data': 'episode_id'}
+                    ]
+              } );    
+
+              $('#tableout4').DataTable( {
                 "processing": true,
                  data:data.results,
                  'columns': [
                     {   'data':'title'},                                          
                     {   'data': 'episode_id'}
                   ]
-            } );
-        } );
-
-
-        $(document).ready(function() {
-          var table = $('#tableout2').DataTable( {
-              "processing": true,
-               data:data.results,
-               'columns': [
-                  {   'data':'title'},                                          
-                  {   'data': 'episode_id'}
-                ]
-          } );
-        } );
-
-        $(document).ready(function() {
-          var table = $('#tableout3').DataTable( {
-              "processing": true,
-               data:data.results,
-               'columns': [
-                  {   'data':'title'},                                          
-                  {   'data': 'episode_id'}
-                ]
-          } );
-        } );
-
-        $(document).ready(function() {
-          var table = $('#tableout4').DataTable( {
-              "processing": true,
-               data:data.results,
-               'columns': [
-                  {   'data':'title'},                                          
-                  {   'data': 'episode_id'}
-                ]
-          } );
-        } );
+            } );    
 
 
 
-
-
-
-
-
+        } );    
       });  
     }  
   )  
